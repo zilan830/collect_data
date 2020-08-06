@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import { BasicLayoutProps, Settings as LayoutSettings } from '@ant-design/pro-layout';
 import { notification } from 'antd';
 import { RequestConfig } from 'umi';
-import RightContent from '@/components/RightContent';
-import Footer from '@/components/Footer';
+// import RightContent from '@/components/RightContent';
+// import Footer from '@/components/Footer';
 import { ResponseError } from 'umi-request';
 // import { queryCurrent } from './services/user';
 import defaultSettings from '../config/defaultSettings';
@@ -37,9 +37,9 @@ export const layout = ({
   initialState: { settings?: LayoutSettings; currentUser?: API.CurrentUser };
 }): BasicLayoutProps => {
   return {
-    rightContentRender: () => <RightContent />,
+    // rightContentRender: () => <RightContent />,
     disableContentMargin: false,
-    footerRender: () => <Footer />,
+    // footerRender: () => <Footer />,
     onPageChange: () => {
       // 如果没有登录，重定向到 login
       // if (!initialState?.currentUser?.userid && history.location.pathname !== '/user/login') {

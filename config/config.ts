@@ -12,7 +12,7 @@ export default defineConfig({
     hmr: true,
   },
   layout: {
-    name: 'Ant Design Pro',
+    name: '数据展示',
     locale: true,
     siderWidth: 208,
   },
@@ -63,15 +63,21 @@ export default defineConfig({
     //     },
     //   ],
     // },
+    // {
+    //   name: 'self.zc',
+    //   icon: 'table',
+    //   path: '/list',
+    //   component: './ListTableList',
+    // },
     {
       name: 'self.zc',
       icon: 'table',
-      path: '/list',
-      component: './ListTableList',
+      path: '/zclist',
+      component: './ZCTableList',
     },
     {
       path: '/',
-      redirect: '/welcome',
+      redirect: '/zclist',
     },
     {
       component: './404',
