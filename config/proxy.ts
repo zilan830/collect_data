@@ -8,7 +8,7 @@
 export default {
   dev: {
     '/api/': {
-      target: 'http://127.0.0.1:7001',
+      target: 'http://101.37.145.31:7001',
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
@@ -22,7 +22,7 @@ export default {
   },
   pre: {
     '/api/': {
-      target: 'http://127.0.0.1:7001',
+      target: 'http://101.37.145.31:7001',
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
