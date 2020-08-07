@@ -93,6 +93,6 @@ export default defineConfig({
   ignoreMomentLocale: true,
   proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {
-    basePath: '/',
+    basePath: 'http://127.0.0.1:7001',
   },
 });
